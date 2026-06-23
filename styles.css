@@ -156,27 +156,72 @@
 
 .content h1{
     color:#1F2A44;
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .content h2{
     color:#1F2A44;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .content h3{
     color:#1F2A44;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .content p{
     color:#1F2A44;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.content .experience{
+    display:flex;
+    flex-direction: column;
+}
+
+.exp-item{
+    display: grid;
+    grid-template-columns: 20rem auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.exp-year {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.exp-content {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.exp-skills {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.skills-item{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills-item li{
+    padding: 0.5rem 1rem;
+    border-radius:999px;
+
+    font-size: 16px;
+    background:#0f3d4a;
+    color:#5eead4;
 }
 
 .image-box{
