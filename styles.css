@@ -164,10 +164,6 @@
     gap: 2rem;
 }
 
-.content section{
-
-}
-
 .content h1{
     color:#1F2A44;
     font-size: 2rem;
@@ -192,6 +188,7 @@
 .content p{
     color:#1F2A44;
     font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .content .experience{
@@ -208,23 +205,32 @@
 .exp-item{
     display: grid;
     grid-template-columns: 16rem auto;
-    grid-template-rows: auto auto;
-    gap: 0.5rem;
+    grid-template-rows: auto auto auto auto;
 }
 
 .exp-year {
     grid-column: 1;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 4;
 }
 
-.exp-content {
+.exp-pos {
     grid-column: 2;
     grid-row: 1;
 }
 
-.exp-skills {
+.exp-employer {
     grid-column: 2;
     grid-row: 2;
+}
+
+.exp-content {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.exp-skills {
+    grid-column: 2;
+    grid-row: 4;
 }
 
 .skills-item{
@@ -353,7 +359,9 @@
     }
 
     .exp-item{
-        grid-template-columns: 8rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
 
 }
