@@ -213,7 +213,7 @@
     display: grid;
     grid-template-columns: 16rem auto;
     grid-template-rows: auto auto auto auto;
-    border-bottom:0.1rem solid #c3cdd9;
+    border-bottom:0.1rem solid #cfd3dd;
 }
 
 .exp-year {
@@ -222,7 +222,7 @@
 }
 
 .exp-year h2{
-    color: #5C6884;
+    color: #7f89a0;
     font-size: 1rem;
 }
 
@@ -237,7 +237,7 @@
 }
 
 .exp-employer h3{
-    color:#5C6884
+    color:#7f89a0
 }
 
 .exp-content {
@@ -275,7 +275,7 @@
 .project-filter button{
     background:none;
     border:none;
-    color:#5C6884;
+    color:#456397;
     font-size:1rem;
     font-weight:bold;
     cursor:pointer;
@@ -316,7 +316,7 @@
     width: 0.2rem;
     height: 100%;
 
-    background: #D7DDE8;
+    background: #cfd3dd;
 
     border-radius: 999px;
 
@@ -330,21 +330,21 @@
 
 .proj-item[data-category=geomatics]:hover::before{
     width: 0.5rem;
-    background:#5C6884;
+    background:#7f89a0;
 }
 
 .proj-item[data-category=other]:hover::before{
     width: 0.5rem;
-    background:#5C6884;
+    background:#7f89a0;
 }
 
 .proj-year h2{
-    color: #5C6884;
-    font-size: 1rem;
+    color: #7f89a0;
+    font-size: 0.8rem;
 }
 
 .proj-loc h3{
-    color: #5C6884;
+    color: #7f89a0;
 }
 
 .proj-skills {
@@ -360,16 +360,26 @@
 
 .proj-link a{
     text-decoration: none;
-    color: #5C6884;
+    color: #456397;
     font-weight: bold;
 }
 
 .proj-link a:hover{
     color: #1F2A44;
+    transition: .4s;
 }
 
 .proj-link i{
     font-size: 0.6rem;
+}
+
+.proj-number{
+
+    font-size:0.9rem;
+    font-weight:700;
+    color:#7f89a0;
+    margin-bottom:.5rem;
+
 }
 
 @media (min-width: 701px) and (max-width: 1400px){
