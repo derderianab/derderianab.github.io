@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -40,8 +41,6 @@
           <div class="sci">
             <a href="#"><i class='bxl bx-github'></i></a>
             <a href="#"><i class='bxl bx-linkedin-square'></i></a>
-            <a href="#"><i class='bxl bx-instagram'></i></a>
-            <a href="#"><i class='bxl bx-facebook'></i></a>
             <a href="#"><i class='bxl bx-gmail'></i></a>
           </div>
         </div>
@@ -132,7 +131,7 @@
                   <li>Terrasolid</li>
                   <li>Emlid Studio</li>
                   <li>gairhawk LiDAR</li>
-                  <li>Trimble Business Center</li>
+                  <li>Trimble Business Centre</li>
                   <li>Python</li>
                   <li>Microsoft Excel</li>
                   <li>Microsoft Word</li>
@@ -176,45 +175,406 @@
 
         <section id="projects" class="projects">
           <h1>PROJECTS</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id semper nisl. Aliquam pharetra placerat mi at maximus. Phasellus vel tellus quis turpis dictum facilisis quis ac erat. Praesent fermentum commodo nunc, eu semper diam. Praesent et ipsum tincidunt, molestie arcu id, aliquet augue. Donec bibendum magna id nunc mollis, non ullamcorper dolor egestas. Donec in lorem at lorem faucibus molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Aliquam erat volutpat. Ut egestas convallis magna at laoreet.</p>
 
-            <p>Mauris nulla augue, pretium vel commodo pulvinar, elementum a leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque, velit id volutpat rutrum, dui risus volutpat erat, a hendrerit tortor urna vestibulum dui. Fusce aliquam sapien eu convallis tincidunt. Suspendisse suscipit dui et mauris pretium, sit amet convallis ex gravida. Quisque urna sem, lacinia id blandit sit amet, ornare a tellus. Fusce ullamcorper et enim a bibendum.</p>
+          <nav class="project-filter">
 
-            <p>In efficitur gravida libero, sed tincidunt ex malesuada nec. Aenean eget risus est. Nulla porttitor cursus dui, a lacinia lorem gravida congue. Donec lacinia finibus quam, eu pretium lorem viverra vitae. Cras ac dolor sagittis, porttitor orci vitae, fringilla orci. Etiam dapibus hendrerit est, id ultrices tellus varius ac. Morbi lectus felis, molestie vel tempus non, consectetur cursus libero. Phasellus auctor dapibus justo sit amet posuere. Aliquam erat volutpat. Pellentesque mollis odio faucibus sapien ornare eleifend. Suspendisse nec lacus vitae lectus blandit consectetur. Cras fermentum ligula quis fermentum auctor. Etiam gravida ligula purus, et blandit dui facilisis quis. Donec convallis gravida leo eu tincidunt. In euismod sed ante eget tristique.</p>
+              <button class="active" data-filter="all">
+                  All
+              </button>
 
-            <p>Sed eget libero eu purus sagittis venenatis. In hac habitasse platea dictumst. Ut velit nunc, suscipit vel dapibus in, rhoncus non est. Morbi interdum felis nisi, semper finibus erat eleifend ac. Maecenas et consequat lorem, sit amet fringilla metus. Morbi ac rhoncus elit. Nulla dapibus sem et porttitor tincidunt.</p>
+              <button data-filter="spatial">
+                  Spatial Analysis
+              </button>
 
-            <p>In id semper tortor. Cras ultrices posuere scelerisque. Donec accumsan eros a risus volutpat, quis laoreet neque dictum. Vestibulum tellus est, egestas eu tortor et, aliquet sollicitudin nulla. Donec pharetra pulvinar leo quis viverra. Proin nibh mi, semper eget sodales eu, luctus id sapien. Praesent mollis elit id nisl accumsan dictum. Proin non rutrum eros. Nullam vehicula ornare lorem, non facilisis tortor bibendum eu. Integer hendrerit pellentesque enim, in suscipit massa iaculis vel.</p>
+              <button data-filter="geomatics">
+                  Geomatics Engineering
+              </button>
 
-            <p>Donec posuere mauris varius arcu mattis convallis. Donec ultricies, sapien id faucibus consequat, augue dolor luctus ligula, sit amet sollicitudin nisl tortor vel ligula. Fusce pretium odio sit amet tristique fermentum. Nunc egestas, neque vel hendrerit vehicula, est elit luctus nunc, non dignissim quam justo eget dolor. Pellentesque sit amet ipsum fermentum, vulputate urna vel, suscipit leo. Donec volutpat, erat nec dictum egestas, arcu ante semper ante, vel consectetur tellus ligula lacinia purus. Nullam purus felis, commodo et sodales eu, lacinia et nunc. Ut faucibus venenatis urna in porttitor. Nunc luctus scelerisque bibendum. In hac habitasse platea dictumst. Sed tellus ipsum, sollicitudin nec lacinia eget, laoreet hendrerit augue. Sed maximus felis suscipit urna efficitur efficitur. Nulla tincidunt tincidunt dapibus. Integer orci purus, ultrices ultricies mattis aliquet, lacinia nec arcu.</p>
+              <button data-filter="research">
+                  Other
+              </button>
 
-            <p>Cras pretium ut turpis sed gravida. Curabitur placerat tellus a fermentum finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec a erat gravida, pharetra enim at, aliquam odio. Cras ultrices lacus sed velit porttitor, quis tincidunt est malesuada. Curabitur in nunc sed dui sollicitudin eleifend eget id erat. Aliquam ante erat, vehicula maximus hendrerit at, dictum id tortor. Nulla justo risus, blandit sit amet consectetur vulputate, fermentum in erat. Curabitur sed sagittis eros. Cras turpis diam, gravida eget fringilla id, laoreet quis ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae porttitor nisl, ut consectetur diam. Suspendisse at posuere est. Vivamus ut venenatis lectus. Maecenas convallis, massa vitae rutrum accumsan, purus ipsum porttitor enim, sit amet rutrum libero ligula et odio.</p>
+          </nav>
 
-            <p>Sed interdum tortor eros, vel blandit tortor consequat auctor. Nullam sodales magna vitae dui suscipit scelerisque. Vestibulum dolor libero, congue sit amet varius blandit, luctus vitae dolor. Etiam maximus mauris vitae enim sagittis, vitae laoreet ipsum tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tempor velit id tristique eleifend. Duis leo leo, vulputate id maximus id, consectetur id sapien. Nulla porttitor a ex eu finibus. Morbi euismod mattis feugiat.</p>
+          <div class="proj-cards">
 
-            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi dapibus et eros eget placerat. Pellentesque a dolor vel est vulputate tempor et ac augue. Ut eros mauris, ultricies sit amet felis aliquam, sagittis dictum diam. Vivamus gravida imperdiet felis, et interdum nisl varius nec. Etiam erat massa, commodo non posuere sit amet, porta eget enim. Pellentesque tincidunt quam eget sapien iaculis rhoncus. Nullam ullamcorper sem ut posuere egestas. Pellentesque non sem semper, sollicitudin lacus eget, dignissim lorem. Cras sollicitudin tincidunt erat quis vehicula. Morbi at dui enim. Nunc vel elit dui.</p>
+            <div class="proj-item" data-category="other">
+              <div class="proj-year">
+                <h2>JUN 2026</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Personal Portfolio Website</h2>
+              </div>
+              <div class="proj-desc">
+                <p>Designed and developed a personal portfolio website to showcase geospatial projects, technical skills, and professional experience. Built using HTML and CSS with a responsive layout and integrated GitHub repository links for project documentation and source code.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="proj-link">
+                <a href="#View Github" target="_blank" rel="noopener noreferrer">
+                  GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-            <p>Sed ac diam elementum, pulvinar lectus hendrerit, varius quam. Nam vel accumsan enim. Maecenas iaculis ipsum massa, laoreet facilisis lorem fermentum vitae. Quisque sed neque rutrum, varius dolor nec, venenatis tellus. Maecenas feugiat varius iaculis. In quis malesuada quam. Morbi posuere neque vitae quam hendrerit laoreet. Vestibulum turpis felis, lacinia id porttitor vitae, tempus sit amet metus.</p>
-           
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id semper nisl. Aliquam pharetra placerat mi at maximus. Phasellus vel tellus quis turpis dictum facilisis quis ac erat. Praesent fermentum commodo nunc, eu semper diam. Praesent et ipsum tincidunt, molestie arcu id, aliquet augue. Donec bibendum magna id nunc mollis, non ullamcorper dolor egestas. Donec in lorem at lorem faucibus molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Aliquam erat volutpat. Ut egestas convallis magna at laoreet.</p>
+            <div class="proj-item" data-category="geodata">
+              <div class="proj-year">
+                <h2>JUN 2026</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Network-Based Spatial Accessibility Analysis Using Custom POIs</h2>
+              </div>
+              <div class="proj-desc">
+                <p>Developed a Python-based workflow to perform network-based spatial accessibility analysis using custom Point of Interest (POI) datasets integrated with OpenStreetMap (OSM) road networks. Combined shortest path analysis, multi-criteria weighting, and spatial aggregation to generate accessibility maps for spatial planning and location-based decision making.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Python</li>
+                  <li>QGIS</li>
+                </ul>
+              </div>
+              <div class="proj-link">
+                <a href="#View Detail" target="_blank" rel="noopener noreferrer">
+                  Read Case Study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#View Github" target="_blank" rel="noopener noreferrer">
+                  GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-            <p>Mauris nulla augue, pretium vel commodo pulvinar, elementum a leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque, velit id volutpat rutrum, dui risus volutpat erat, a hendrerit tortor urna vestibulum dui. Fusce aliquam sapien eu convallis tincidunt. Suspendisse suscipit dui et mauris pretium, sit amet convallis ex gravida. Quisque urna sem, lacinia id blandit sit amet, ornare a tellus. Fusce ullamcorper et enim a bibendum.</p>
+            <div class="proj-item" data-category="geodata">
+              <div class="proj-year">
+                <h2>MAY 2026</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Integrate Custom POIs to a Network Graph</h2>
+              </div>
+              <div class="proj-desc">
+                <p>Developed a Python workflow to integrate custom Point of Interest (POI) datasets into an OpenStreetMap (OSM)-derived road network graph. Processed road network and POI data to establish graph connectivity, enabling network-based accessibility analysis, shortest path calculations, and routing.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Python</li>
+                  <li>QGIS</li>
+                </ul>
+              </div>
+              <div class="proj-link">
+                <a href="#View Detail" target="_blank" rel="noopener noreferrer">
+                  Read Case Study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#View Github" target="_blank" rel="noopener noreferrer">
+                  GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-            <p>In efficitur gravida libero, sed tincidunt ex malesuada nec. Aenean eget risus est. Nulla porttitor cursus dui, a lacinia lorem gravida congue. Donec lacinia finibus quam, eu pretium lorem viverra vitae. Cras ac dolor sagittis, porttitor orci vitae, fringilla orci. Etiam dapibus hendrerit est, id ultrices tellus varius ac. Morbi lectus felis, molestie vel tempus non, consectetur cursus libero. Phasellus auctor dapibus justo sit amet posuere. Aliquam erat volutpat. Pellentesque mollis odio faucibus sapien ornare eleifend. Suspendisse nec lacus vitae lectus blandit consectetur. Cras fermentum ligula quis fermentum auctor. Etiam gravida ligula purus, et blandit dui facilisis quis. Donec convallis gravida leo eu tincidunt. In euismod sed ante eget tristique.</p>
+            <div class="proj-item" data-category="geodata">
+              <div class="proj-year">
+                <h2>MAY 2026</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Location Suitability Analysis for Transmission Tower in South Konawe, Muna, and West Muna Regencies</h2>
+              </div>
+              <div class="proj-desc">
+                <p>Analyzed spatial characteristics of existing 150 kV transmission tower locations across South Konawe, Muna, and West Muna Regencies to identify suitable areas for future transmission tower development. The project integrated GIS-based multi-criteria analysis with statistical parameter evaluation to derive suitability scores, assign criterion weights, and produce a weighted overlay map for location suitability assessment.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>QGIS</li>
+                  <li>Microsoft Excel</li>
+                </ul>
+              </div>
+              <div class="proj-link">
+                <a href="#View Detail" target="_blank" rel="noopener noreferrer">
+                  Read Case Study <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
-            <p>Sed eget libero eu purus sagittis venenatis. In hac habitasse platea dictumst. Ut velit nunc, suscipit vel dapibus in, rhoncus non est. Morbi interdum felis nisi, semper finibus erat eleifend ac. Maecenas et consequat lorem, sit amet fringilla metus. Morbi ac rhoncus elit. Nulla dapibus sem et porttitor tincidunt.</p>
+              </div>
+            </div>
 
-            <p>In id semper tortor. Cras ultrices posuere scelerisque. Donec accumsan eros a risus volutpat, quis laoreet neque dictum. Vestibulum tellus est, egestas eu tortor et, aliquet sollicitudin nulla. Donec pharetra pulvinar leo quis viverra. Proin nibh mi, semper eget sodales eu, luctus id sapien. Praesent mollis elit id nisl accumsan dictum. Proin non rutrum eros. Nullam vehicula ornare lorem, non facilisis tortor bibendum eu. Integer hendrerit pellentesque enim, in suscipit massa iaculis vel.</p>
+            <div class="proj-item" data-category="geodata">
+              <div class="proj-year">
+                <h2>FEB 2026</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Antecedent Rainfall Analysis of Flood and Landslide Events Across Indonesian Regencies and Cities</h2>
+              </div>
+              <div class="proj-desc">
+                <p>Analyzed average 3-, 5-, and 7-day antecedent rainfall associated with flood and landslide events across Indonesian regencies and cities using CHIRPS satellite rainfall data and disaster event records from 2021 - 2025. The project aimed to identify regencies and cities with relatively low accumulated rainfall conditions despite having recorded flood and landslide events.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Python</li>
+                </ul>
+              </div>
+              <div class="proj-link">
+                <a href="#View Detail" target="_blank" rel="noopener noreferrer">
+                  Read Case Study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#View Github" target="_blank" rel="noopener noreferrer">
+                  GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
 
-            <p>Donec posuere mauris varius arcu mattis convallis. Donec ultricies, sapien id faucibus consequat, augue dolor luctus ligula, sit amet sollicitudin nisl tortor vel ligula. Fusce pretium odio sit amet tristique fermentum. Nunc egestas, neque vel hendrerit vehicula, est elit luctus nunc, non dignissim quam justo eget dolor. Pellentesque sit amet ipsum fermentum, vulputate urna vel, suscipit leo. Donec volutpat, erat nec dictum egestas, arcu ante semper ante, vel consectetur tellus ligula lacinia purus. Nullam purus felis, commodo et sodales eu, lacinia et nunc. Ut faucibus venenatis urna in porttitor. Nunc luctus scelerisque bibendum. In hac habitasse platea dictumst. Sed tellus ipsum, sollicitudin nec lacinia eget, laoreet hendrerit augue. Sed maximus felis suscipit urna efficitur efficitur. Nulla tincidunt tincidunt dapibus. Integer orci purus, ultrices ultricies mattis aliquet, lacinia nec arcu.</p>
+            <div class="proj-item" data-category="geodata">
+              <div class="proj-year">
+                <h2>OCT 2025</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Flood Hazard Mapping in the Citarum Catchment, West Java, Indonesia</h2>
+              </div>
+              <div class="proj-desc">
+                <p>Applied a GIS-based multi-criteria flood hazard mapping methodology from previous research to assess flood susceptibility in the Citarum Catchment, West Java, Indonesia. Integrated DEM, soil, land cover, slope, HAND, distance to streams, and curve number datasets to identify flood-prone areas and generate a flood hazard map.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>QGIS</li>
+                </ul>
+              </div>
+              <div class="proj-link">
+                <a href="#View Detail" target="_blank" rel="noopener noreferrer">
+                  Read Case Study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
 
-            <p>Cras pretium ut turpis sed gravida. Curabitur placerat tellus a fermentum finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec a erat gravida, pharetra enim at, aliquam odio. Cras ultrices lacus sed velit porttitor, quis tincidunt est malesuada. Curabitur in nunc sed dui sollicitudin eleifend eget id erat. Aliquam ante erat, vehicula maximus hendrerit at, dictum id tortor. Nulla justo risus, blandit sit amet consectetur vulputate, fermentum in erat. Curabitur sed sagittis eros. Cras turpis diam, gravida eget fringilla id, laoreet quis ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae porttitor nisl, ut consectetur diam. Suspendisse at posuere est. Vivamus ut venenatis lectus. Maecenas convallis, massa vitae rutrum accumsan, purus ipsum porttitor enim, sit amet rutrum libero ligula et odio.</p>
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>JUN - JUL 2023</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Aerial Photogrammetry Survey</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>Cimahi City, West Java</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Led the data processing team in a UAV-based aerial photogrammetry survey covering approximately 4,200 ha. The project included orthophoto generation, digital surface model (DSM) creation, GNSS-based accuracy assessment, and quality control of final deliverables.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Agisoft Metashape</li>
+                  <li>Emlid Studio</li>
+                  <li>Trimble Business Centre</li>
+                  <li>QGIS</li>
+                </ul>
+              </div>
+            </div>
 
-            <p>Sed interdum tortor eros, vel blandit tortor consequat auctor. Nullam sodales magna vitae dui suscipit scelerisque. Vestibulum dolor libero, congue sit amet varius blandit, luctus vitae dolor. Etiam maximus mauris vitae enim sagittis, vitae laoreet ipsum tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tempor velit id tristique eleifend. Duis leo leo, vulputate id maximus id, consectetur id sapien. Nulla porttitor a ex eu finibus. Morbi euismod mattis feugiat.</p>
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>MAY - JUN 2023</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Aerial Photogrammetry and LiDAR Survey</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>Subang Town, West Java</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Led the data processing team in an integrated aerial photogrammetry and LiDAR survey covering approximately 500 ha. The project included orthophoto generation, terrain modeling, land cover mapping, and GNSS-based accuracy assessment.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Agisoft Metashape</li>
+                  <li>Terrasolid</li>
+                  <li>Emlid Studio</li>
+                  <li>gAirHawk LiDAR</li>
+                  <li>Trimble Business Centre</li>
+                  <li>Global Mapper</li>
+                </ul>
+              </div>
+            </div>
 
-            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi dapibus et eros eget placerat. Pellentesque a dolor vel est vulputate tempor et ac augue. Ut eros mauris, ultricies sit amet felis aliquam, sagittis dictum diam. Vivamus gravida imperdiet felis, et interdum nisl varius nec. Etiam erat massa, commodo non posuere sit amet, porta eget enim. Pellentesque tincidunt quam eget sapien iaculis rhoncus. Nullam ullamcorper sem ut posuere egestas. Pellentesque non sem semper, sollicitudin lacus eget, dignissim lorem. Cras sollicitudin tincidunt erat quis vehicula. Morbi at dui enim. Nunc vel elit dui.</p>
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>OCT - DES 2022</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Aerial Photogrammetry Survey</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>Tuban City - Gresik Regency, East Java</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Led the data processing team in a UAV-based aerial photogrammetry survey covering approximately 3,000 ha. The project included GNSS benchmark establishment, orthophoto generation, land cover mapping, and accuracy verification of final deliverables.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Agisoft Metashape</li>
+                  <li>Emlid Studio</li>
+                  <li>Trimble Business Centre</li>
+                  <li>Global Mapper</li>
+                </ul>
+              </div>
+            </div>
 
-            <p>Sed ac diam elementum, pulvinar lectus hendrerit, varius quam. Nam vel accumsan enim. Maecenas iaculis ipsum massa, laoreet facilisis lorem fermentum vitae. Quisque sed neque rutrum, varius dolor nec, venenatis tellus. Maecenas feugiat varius iaculis. In quis malesuada quam. Morbi posuere neque vitae quam hendrerit laoreet. Vestibulum turpis felis, lacinia id porttitor vitae, tempus sit amet metus.</p>
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>JUL - AUG 2022</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Satellite Imagery and IFSAR Accuracy Assessment</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>Tangerang City, Banten</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Led the quality assessment team in evaluating the positional accuracy of satellite imagery and IFSAR datasets covering approximately 2,600 ha. The project included GNSS field surveys, control point planning, and validation of horizontal and vertical mapping accuracy.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Trimble Business Centre</li>
+                  <li>Global Mapper</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>MAY - JUN 2022</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Aerial Photogrammetry and LiDAR Survey</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>West Bandung Regency, West Java</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Led the data processing team in an integrated aerial photogrammetry and LiDAR survey covering approximately 430 ha. The project included orthophoto generation, terrain modeling, data integration, and quality assessment of final mapping products.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Agisoft Metashape</li>
+                  <li>Terrasolid</li>
+                  <li>Emlid Studio</li>
+                  <li>gAirHawk LiDAR</li>
+                  <li>Trimble Business Centre</li>
+                  <li>Global Mapper</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>APR - JUN 2022</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Aerial Photogrammetry Survey</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>Sumedang Regency, West Java</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Led the data processing team in a UAV-based aerial photogrammetry survey covering approximately 8,600 ha. The project included orthophoto generation, land cover digitization, quality assessment, and preparation of final mapping products.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Agisoft Metashape</li>
+                  <li>Emlid Studio</li>
+                  <li>Trimble Business Centre</li>
+                  <li>Global Mapper</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>MAR - MAY 2022</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Aerial Photogrammetry and LiDAR Survey</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>Sumedang Regency, West Java</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Led the data processing team in an integrated aerial photogrammetry and LiDAR survey covering approximately 1,500 ha. The project included point cloud processing, terrain modeling, GNSS-based validation, and quality assessment of final products.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Agisoft Metashape</li>
+                  <li>Terrasolid</li>
+                  <li>Emlid Studio</li>
+                  <li>gAirHawk LiDAR</li>
+                  <li>Trimble Business Centre</li>
+                  <li>Global Mapper</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>AUG 2021 - JAN 2022</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Geospatial Mapping and Spatial Data Verification</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>West Bandung Regency, West Java</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Coordinated field activities for a geospatial mapping project covering approximately 6,000 ha. The project included spatial data verification, orthophoto interpretation, feature digitization, and field data collection to support geospatial database development.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Agisoft Metashape</li>
+                  <li>Global Mapper</li>
+                  <li>ArcMap</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>JUL - AUG 2021</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Aerial Photogrammetry and LiDAR Survey</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>Tangerang City, Banten</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Processed aerial photogrammetry and LiDAR datasets covering approximately 400 ha. The project included LiDAR classification, terrain modeling, GNSS-based accuracy assessment, and quality control of final mapping products.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Agisoft Metashape</li>
+                  <li>Terrasolid</li>
+                  <li>Global Mapper</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-item" data-category="geomatics">
+              <div class="proj-year">
+                <h2>JUL - AUG 2021</h2>
+              </div>
+              <div class="proj-title">
+                <h2>Aerial LiDAR Data Processing</h2>
+              </div>
+              <div class="proj-loc">
+                <h3>Bandung City, West Java</h3>
+              </div>
+              <div class="proj-desc">
+                <p>Processed aerial photogrammetry and LiDAR datasets covering approximately 400 ha. The project included LiDAR classification, terrain modeling, GNSS-based accuracy assessment, and quality control of final mapping products.</p>
+              </div>
+              <div class="proj-skills">
+                <ul class="skills-item">
+                  <li>Terrasolid</li>
+                  <li>Cloud Compare</li>
+                  <li>Global Mapper</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
 
     </main>
