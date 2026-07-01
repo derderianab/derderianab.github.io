@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Hazard Mapping in the Citarum Catchment, West Java, Indonesia</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel='stylesheet' href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css'>
+  <link rel='stylesheet' href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+    
+<body>
+    <div class="info">
+        <div class="title">
+            <h1>Flood Hazard Mapping in the Citarum Catchment, West Java, Indonesia</h1>
+        </div>
+        <div class="year">
+            <h2>OCT 2025</h2>
+        </div>
+        <div class="software-tools">
+            <ul class="skills-item">
+                <li>QGIS</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="introduction">
+        <h2>Introduction</h2>
+        <p>Floods are the most common type of natural disaster in Indonesia, according to BNPB. One of the most frequent types is river flooding, which is caused by heavy rainfall that increases river discharge beyond the river's capacity. This type of flooding is commonly referred to as a fluvial flood.</p>
+        <p>To mitigate the impacts of river flooding, it is essential to understand where floods are likely to occur and the level of hazard in different areas. Therefore, flood hazard mapping plays a crucial role in identifying flood-prone locations and supporting disaster risk reduction.</p>
+        <p>Flood Hazard mapping has been widely studied in the field of disaster management. One example is the study by Rincón et al. (2018), which incorporated flood hazard mapping as a component of flood risk assessment using GIS and multi-criteria analysis in the Greater Toronto Area.</p>
+        <p>This project aims to reimplement the flood hazard mapping workflow proposed by Rincón et al. (2018) by adopting Scenario 2 and evaluating its applicability to the Indonesian context using publicly available datasets through a case study in the Citarum Catchment, West Java, Indonesia.</p>
+    </div>
+
+    <div class="methodology">
+        <h2>Methodology</h2>
+        <p>This project adopts Scenario 2 (S2) proposed by Rincón et al. (2018), which uses four flood hazard variables: Distance to Stream, HAND, Slope, and Curve Number. The process involves several key steps:</p>
+        <ol>
+            <li>Data Collection: Gathering relevant spatial layers for analysis, including elevation model, land use, soil attributes, rainfall, and catchment boundary.</li>
+            <li>Data Processing: Deriving flood hazard variables from the input datasets, followed by reprojection, clipping, raster alignment, and reclassification into a common hazard scoring scale.</li>
+            <li>Flood Hazard Analysis: Applying weighted overlay analysis to integrate the processed layers and assess flood hazard levels.</li>
+            <li>Mapping: Creating visual representations of flood hazard zones based on the analysis results.</li>
+        </ol>
+    </div>
+
+    <div class="findings">
+        <h2>Findings</h2>
+        <ul>
+            <li>The flood hazard mapping results indicate that flood-prone areas are primarily concentrated near river networks and low-lying drainage zones. This suggests that the HAND and Distance to Streams parameters have a strong influence on flood susceptibility in the study area.</li>
+            <li>Further validation approaches are required to quantitatively assess how accurately the generated river networks represent real-world hydrological conditions and actual river geometries.</li>
+            <li>The flow accumulation threshold significantly influences the generated river network and directly affects the resulting flood hazard map. Therefore, an appropriate threshold calibration approach and additional filtering step are required to improve the representation of actual river networks.</li>
+            <li>Overlay analysis with satellite imagery showed that some generated river networks diverted around bridges and intersected built-up areas instead of following actual drainage paths. This highlights the need for hydrologically conditioned DEMs and additional filtering approaches to better represent real-world river networks.</li>
+        </ul>
+    </div>
+
+    <div class="results">
+        <div class="slider">
+            <div class="slides">
+                <img src="img1.png">
+                <img src="img2.png">
+                <img src="img3.png">
+                <img src="img4.png">
+                <img src="img5.png">
+                <img src="img6.png">
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </div>
+
+    <div class="references">
+        <h2>References</h2>
+        <ol>
+            <li>Rincón, D., Khan, U. T., & Armenakis, C. (2018). Flood Risk Mapping Using GIS and Multi-Criteria Analysis: A Greater Toronto Area Case Study. Geosciences, 8(8), 275. https://doi.org/10.3390/geosciences8080275</li>
+            <li>Rennó, C. D., Nobre, A. D., Cuartas, L. A., Soares, J. V., Hodnett, M. G., Tomasella, J., & Waterloo, M. J. (2008). HAND, a New Terrain Descriptor Using SRTM-DEM: Mapping Terra-Firme Rainforest Environments in Amazonia. Remote Sensing of Environment, 112(9), 3469–3481. https://doi.org/10.1016/j.rse.2008.03.018</li>
+            <li>Hydrologic Engineering Center. (n.d.). Curve Number (Version 6.4). U.S. Army Corps of Engineers. https://www.hec.usace.army.mil/confluence/rasdocs/ras1dtechref/6.4/overview-of-optional-capabilities/modeling-precipitation-and-infiltration/curve-number</li>
+        </ol>
+    </div>
+
+
+
+</body>
+
+</html>
